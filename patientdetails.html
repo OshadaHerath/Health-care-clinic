@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        }
+
+        body {
+        background-color: #f8f9fa;
+        font-family: Arial, sans-serif;
+        background-image: url('allback.jpg');
+        background-size: cover;
+        
+        background-position: center;
+        min-height: 100vh; 
+        }
+
+      form {
+        max-width: 600px;
+        margin: auto;
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      input[type="text"], 
+      input[type="date"], 
+      input[type="number"], 
+      input[type="email"], 
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ced4da;
+        border-radius: 4px;
+      }
+
+      input[type="submit"] {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #0056b3;
+      }
+
+      textarea {
+        resize: vertical;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="patientdetails.php" method="post">
+        <input type="text" name="first_name" placeholder="First name"><br>
+        <input type="text" name="last_name" placeholder="Last name"><br>
+        <input type="date" name="DOB" placeholder="Date of birth"><br>
+        <input type="text" name="address" placeholder="Address"><br>
+        <input type="number" name="phone_number" placeholder="Phone number"><br>
+        <input type="email" name="email" placeholder="Email"><br>
+        <textarea id="medical_history" name="medical_history" rows="4" placeholder="Medical history"></textarea><br>
+        <textarea id="insurance_details" name="insurance_details" rows="2" placeholder="Insurance details"></textarea><br>
+        <input type="submit" value="Submit" name="submit">
+    </form>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
